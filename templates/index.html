@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heat Stroke Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h2>Heat Stroke Predictor</h2>
+    <div class="container">
+    <form action="/predict" method="post">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location"><br><br>
+
+        <label for="Patient temperature">Patient temperature:</label>
+        <input type="text" id="Patient temperature" name="Patient temperature"><br><br>
+
+        <label for="Exposure to sun">Exposure to sun:</label>
+        <input type="text" id="Exposure to sun" name="Exposure to sun"><br><br>
+
+        <label for="Exertional (1) vs classic (0)">Exertional (1) vs classic (0):</label>
+        <input type="text" id="Exertional (1) vs classic (0)" name="Exertional (1) vs classic (0)"><br><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age"><br><br>
+
+        <label for="Strenuous exercise">Strenuous exercise:</label>
+        <input type="text" id="Strenuous exercise" name="Strenuous exercise"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+        </div>
+</body>
+</html>
