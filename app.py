@@ -3,6 +3,7 @@ import joblib
 import requests
 import numpy as np
 import math
+from weatherapi import API_KEY
 
 app = Flask(__name__)
 
@@ -22,7 +23,7 @@ feature_names = [
     'Strenuous exercise'
 ]
 
-API_KEY = 'b4aaed42e8a920c5adc527b5219d38fa'
+
 
 def celsius_to_fahrenheit(celsius):
     fahrenheit = celsius * 9/5 + 32
